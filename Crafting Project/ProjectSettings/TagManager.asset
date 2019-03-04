@@ -6,6 +6,8 @@ TagManager:
   tags:
   - FireArea
   - SafeArea
+  - Fire
+  - Inventory
   layers:
   - Default
   - TransparentFX
