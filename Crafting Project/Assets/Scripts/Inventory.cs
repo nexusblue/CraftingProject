@@ -23,4 +23,20 @@ public class Inventory : MonoBehaviour
         stoneText.text = stone.ToString();
         twineText.text = twine.ToString();
     }
+
+    public bool Craft(CraftableItem craft)
+    {
+        bool success = false;
+        switch (craft) {
+            case CraftableItem.SWORD:
+                break;
+            case CraftableItem.BOW:
+                break;
+            case CraftableItem.PICKAXE:
+                break;
+        }
+        return false;
+
+    }
+
 }
