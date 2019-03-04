@@ -1,23 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHp : MonoBehaviour
 {
-    public float health = 100.0f;
+    public float startHealth = 100.0f;
+    private float health; 
+    public Image HealthBar;
 
     // Start is called before the first frame update
     void Start(){
-        health = 100.0f;
+        health = startHealth;
     }
 
 
     private void OnTriggerStay(Collider other ){
         if (other.gameObject.tag == "FireArea") {
-            health -= 1 * Time.deltaTime;
+            health -= 2 * Time.deltaTime;
+            HealthBar.fillAmount = health / startHealth;
         }
         if (other.gameObject.tag == "SafeArea" && health < 100 ){
-            health +=  3 * Time.deltaTime;
+            health +=  4 * Time.deltaTime;
+            HealthBar.fillAmount = health / startHealth;
         }
 
     }
@@ -25,10 +30,12 @@ public class PlayerHp : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update(){
+    void FixedUpdate(){
         Debug.Log("Player HP:" + health);
-
-        if (health > 100) { health = 100; }
+        if (health > 100) {
+        health = 100;
+             
+        }
 
     }
 

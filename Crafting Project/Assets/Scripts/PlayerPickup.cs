@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collectable : MonoBehaviour
+public class PlayerPickup : MonoBehaviour
 {
-    public Inventory.ResourceItem resourceType ;
 
-    private void OnMouseDown()
+    private void OnTriggerEnter(Collider other)
     {
-        switch (resourceType) {
+        if (other.gameObject.tag )
             case Inventory.ResourceItem.WOOD:
                 GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().wood++;
                 break;
@@ -18,8 +17,8 @@ public class Collectable : MonoBehaviour
             case Inventory.ResourceItem.TWINE:
                 GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().twine++;
                 break;
-        }
-        Destroy(gameObject);
+
+        //Destroy(gameObject);
     }
 
 }
