@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 503457744227135047}
   - component: {fileID: 7642041542362980622}
   - component: {fileID: 7642041542362980621}
+  - component: {fileID: 7972756440858508549}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Untagged
@@ -116,7 +117,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7642041542362980623}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.47, y: -1.68, z: -6.62}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children:
@@ -145,8 +146,23 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7642041542362980623}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7972756440858508549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7642041542362980623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a747908559c34b77ac529eb43253276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateX: 75
+  rotateY: 0
+  rotateZ: 0

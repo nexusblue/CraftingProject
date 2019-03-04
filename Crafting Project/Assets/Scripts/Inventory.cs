@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
@@ -12,5 +13,14 @@ public class Inventory : MonoBehaviour
     public int stone;
     public int twine;
 
+    public Text woodText;
+    public Text stoneText;
+    public Text twineText;
 
+    private void Update()
+    {
+        woodText.text = wood.ToString();
+        stoneText.text = stone.ToString();
+        twineText.text = twine.ToString();
+    }
 }
