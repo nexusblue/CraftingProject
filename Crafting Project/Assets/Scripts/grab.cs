@@ -20,7 +20,7 @@ public class grab : MonoBehaviour
 
         if (Physics.Raycast(this.transform.position, this.transform.forward, out whatIHit, distance)){
 
-            if (Input.GetKeyDown(KeyCode.E)){
+            if (Input.GetMouseButtonDown(0)){
                 Debug.Log("I picked up a " + whatIHit.collider.gameObject.name);
                 //if (whatIHit.collider.tag == "coin"){
 
