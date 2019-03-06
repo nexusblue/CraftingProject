@@ -5662,7 +5662,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0402312, y: 0.78538746}
   m_AnchorMax: {x: 0.15900001, y: 0.84561265}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 548, y: -29.041748}
+=======
+  m_AnchoredPosition: {x: 548, y: -29.041702}
+>>>>>>> parent of 240464d... Alter scene and inventory script
   m_SizeDelta: {x: 27.228333, y: 6.943335}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &369683466
@@ -6255,7 +6259,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0402312, y: 0.8684835}
   m_AnchorMax: {x: 0.15900001, y: 0.9301292}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 548, y: -15.099609}
+=======
+  m_AnchoredPosition: {x: 548, y: -15.099747}
+>>>>>>> parent of 240464d... Alter scene and inventory script
   m_SizeDelta: {x: 27.228333, y: 5.774542}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &876105509
