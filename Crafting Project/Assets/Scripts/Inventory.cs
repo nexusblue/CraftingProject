@@ -52,6 +52,8 @@ public class Inventory : MonoBehaviour
                     wood -= 1;
                     stone -= 2;
                     hasSword = true;
+                    Instantiate(Resources.Load("Sword"), new Vector3(-4.0f,-1f, -0.65f), Quaternion.identity);
+                    //GameObject projectile = Instantiate(Resources.Load("RocketShip1"), transform.position, transform.rotation) as GameObject;
                 }
                 break;
             case CraftableItem.BOW:
@@ -60,6 +62,7 @@ public class Inventory : MonoBehaviour
                     wood -= 2;
                     twine -= 2;
                     hasBow = true;
+                    Instantiate(Resources.Load("Bow"), new Vector3(-4.0f, -1f, 0.1f), Quaternion.identity);
                 }
                 break;
             case CraftableItem.PICKAXE:
@@ -68,6 +71,7 @@ public class Inventory : MonoBehaviour
                     wood -= 1;
                     stone -= 2;
                     hasPickaxe = true;
+                    Instantiate(Resources.Load("Pickaxe"), new Vector3(-4.0f, -1f, .65f), Quaternion.identity);
                 }
                 break;
         }
