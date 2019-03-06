@@ -470,7 +470,7 @@ Transform:
   m_LocalScale: {x: 0.93694, y: 1, z: 2.1377}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &185560733
 SphereCollider:
@@ -5662,8 +5662,30 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0402312, y: 0.78538746}
   m_AnchorMax: {x: 0.15900001, y: 0.84561265}
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  m_AnchoredPosition: {x: 548, y: -29.041748}
+=======
+  m_AnchoredPosition: {x: 548, y: -29.041702}
+>>>>>>> parent of 240464d... Alter scene and inventory script
+=======
+  m_AnchoredPosition: {x: 548, y: -29.041702}
+>>>>>>> parent of 1c3e60b... added shaders and audio?
+=======
+  m_AnchoredPosition: {x: 548, y: -29.041748}
+>>>>>>> parent of fba879a... revert back to prior changes
+  m_SizeDelta: {x: 27.228333, y: 6.943335}
+=======
+  m_AnchoredPosition: {x: -0.099853516, y: -0.19995117}
+  m_SizeDelta: {x: -0.79000854, y: 2}
+>>>>>>> parent of d6564c9... Spawned prefabs when player presses make item button.
+=======
   m_AnchoredPosition: {x: 168.2, y: -49.5}
   m_SizeDelta: {x: 52.57, y: 13.14}
+>>>>>>> parent of 64e3379... Revert "Alter scene and inventory script"
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &369683466
 MonoBehaviour:
@@ -5980,7 +6002,7 @@ Transform:
   - {fileID: 1928795453}
   - {fileID: 1133303522}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &627258913
 PrefabInstance:
@@ -6255,8 +6277,30 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0402312, y: 0.8684835}
   m_AnchorMax: {x: 0.15900001, y: 0.9301292}
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  m_AnchoredPosition: {x: 548, y: -15.099609}
+=======
+  m_AnchoredPosition: {x: 548, y: -15.099747}
+>>>>>>> parent of 240464d... Alter scene and inventory script
+=======
+  m_AnchoredPosition: {x: 548, y: -15.099747}
+>>>>>>> parent of 1c3e60b... added shaders and audio?
+=======
+  m_AnchoredPosition: {x: 548, y: -15.099609}
+>>>>>>> parent of fba879a... revert back to prior changes
+  m_SizeDelta: {x: 27.228333, y: 5.774542}
+=======
+  m_AnchoredPosition: {x: -0.11010742, y: 0.2000122}
+  m_SizeDelta: {x: -0.79000854, y: 1}
+>>>>>>> parent of d6564c9... Spawned prefabs when player presses make item button.
+=======
   m_AnchoredPosition: {x: 168.20001, y: -25.379978}
   m_SizeDelta: {x: 52.57, y: 11.63}
+>>>>>>> parent of 64e3379... Revert "Alter scene and inventory script"
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &876105509
 MonoBehaviour:
@@ -6645,8 +6689,13 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0402312, y: 0.7003874}
   m_AnchorMax: {x: 0.15900001, y: 0.762}
+<<<<<<< HEAD
+  m_AnchoredPosition: {x: -0.099853516, y: -0.099975586}
+  m_SizeDelta: {x: -0.79000854, y: 1}
+=======
   m_AnchoredPosition: {x: 168.20001, y: -72.989975}
   m_SizeDelta: {x: 52.57, y: 11.48}
+>>>>>>> parent of 64e3379... Revert "Alter scene and inventory script"
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &995945425
 MonoBehaviour:
@@ -7107,7 +7156,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1282291037
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7127,8 +7176,13 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< HEAD
+  m_AnchoredPosition: {x: -3.9674072, y: 0}
+  m_SizeDelta: {x: -77.665, y: 0}
+=======
   m_AnchoredPosition: {x: 269.61, y: 122}
   m_SizeDelta: {x: -541.31, y: -253.5}
+>>>>>>> parent of 64e3379... Revert "Alter scene and inventory script"
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1282291038
 MonoBehaviour:
@@ -7611,7 +7665,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.16625, y: 0.91430736}
   m_AnchorMax: {x: 0.3425, y: 0.96400005}
-  m_AnchoredPosition: {x: 0.20019531, y: 0.6999512}
+  m_AnchoredPosition: {x: 0.19995117, y: 0.6999512}
   m_SizeDelta: {x: 1.75, y: 1.3999939}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1486913016
@@ -8008,7 +8062,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.13793945, y: 0.05000305}
+  m_AnchoredPosition: {x: -0.13800049, y: 0.05000305}
   m_SizeDelta: {x: -0.47, y: -2.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1790971810
@@ -8438,8 +8492,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.32125002, y: 0.08266251}
   m_AnchorMax: {x: 0.72375, y: 0.13829999}
-  m_AnchoredPosition: {x: -7.899994, y: 7.0200195}
-  m_SizeDelta: {x: 20.95, y: 28.73}
+  m_AnchoredPosition: {x: 0.8000488, y: 0.5}
+  m_SizeDelta: {x: -1.4300003, y: 0.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2069320889
 MonoBehaviour:
@@ -8512,9 +8566,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed00ecb3645024ee580180209d640312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wood: 10
-  stone: 10
-  twine: 10
+  wood: 0
+  stone: 0
+  twine: 0
   woodText: {fileID: 1868391337}
   stoneText: {fileID: 1856212834}
   twineText: {fileID: 930688919}
