@@ -62,7 +62,7 @@ public class Inventory : MonoBehaviour
                     wood -= 2;
                     twine -= 2;
                     hasBow = true;
-                    Instantiate(Resources.Load("Bow"), new Vector3(-4.0f, -1f, 0.1f), Quaternion.identity);
+                    Instantiate(Resources.Load("Bow"), new Vector3(-4.0f, -1f, 0f), Quaternion.identity);
                 }
                 break;
             case CraftableItem.PICKAXE:
