@@ -1417,7 +1417,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed00ecb3645024ee580180209d640312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
+  wood: 0
+  stone: 0
+  twine: 0
+  woodText: {fileID: 306045700}
+  stoneText: {fileID: 1049552612}
+  twineText: {fileID: 989635524}
+  hasSword: 0
+  hasBow: 0
+  hasPickaxe: 0
 --- !u!4 &629657073
 Transform:
   m_ObjectHideFlags: 0
@@ -1770,7 +1778,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42b4e35bf22f4e18aae0915ea86e301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
+  menuMessage: {fileID: 1678980361}
+  inventScreen: {fileID: 50487401}
 --- !u!135 &953754513
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2056,7 +2065,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4990cf1bed644c2e8ea271ece545a9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
 --- !u!114 &993638584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2069,7 +2077,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 738317b08a5cf4bb98fb462bf7d5a74a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
+  startHealth: 100
+  HealthBar: {fileID: 581417130}
 --- !u!1 &1049552609
 GameObject:
   m_ObjectHideFlags: 0
