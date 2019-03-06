@@ -60,10 +60,6 @@ public class Inventory : MonoBehaviour
                     wood -= 2;
                     twine -= 2;
                     hasBow = true;
-<<<<<<< HEAD
-=======
-                    Instantiate(Resources.Load("Bow"), new Vector3(-4.0f, -1f, 0f), Quaternion.identity);
->>>>>>> parent of 64e3379... Revert "Alter scene and inventory script"
                 }
                 break;
             case CraftableItem.PICKAXE:
