@@ -52,6 +52,8 @@ public class Inventory : MonoBehaviour
                     wood -= 1;
                     stone -= 2;
                     hasSword = true;
+                    Instantiate(Resources.Load("TempSword"), new Vector3(4.20f, -1.3f, -1f), Quaternion.identity);
+
                 }
                 break;
             case CraftableItem.BOW:
@@ -60,6 +62,7 @@ public class Inventory : MonoBehaviour
                     wood -= 2;
                     twine -= 2;
                     hasBow = true;
+                    Instantiate(Resources.Load("TempBow"), new Vector3(4.20f, -1.3f, 0f), Quaternion.identity);
                 }
                 break;
             case CraftableItem.PICKAXE:
@@ -68,6 +71,8 @@ public class Inventory : MonoBehaviour
                     wood -= 1;
                     stone -= 2;
                     hasPickaxe = true;
+                    Instantiate(Resources.Load("TempPickaxe"), new Vector3(4.20f, -1.3f, 1f), Quaternion.identity);
+
                 }
                 break;
         }
