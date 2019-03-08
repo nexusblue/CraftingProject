@@ -21,6 +21,10 @@ public class Inventory : MonoBehaviour
     public bool hasBow;
     public bool hasPickaxe;
 
+    public GameObject SpawnSword;
+    public GameObject SpawnBow;
+    public GameObject SpawnPickaxe;
+
     private void Update()
     {
         woodText.text = wood.ToString();
@@ -52,7 +56,8 @@ public class Inventory : MonoBehaviour
                     wood -= 1;
                     stone -= 2;
                     hasSword = true;
-                    Instantiate(Resources.Load("TempSword"), new Vector3(4.20f, -1.3f, -1f), Quaternion.identity);
+                    //new Vector3(4.20f, -1.3f, -1f)
+                    Instantiate(Resources.Load("TempSword"), SpawnSword.transform.position , Quaternion.identity);
 
                 }
                 break;
@@ -62,7 +67,7 @@ public class Inventory : MonoBehaviour
                     wood -= 2;
                     twine -= 2;
                     hasBow = true;
-                    Instantiate(Resources.Load("TempBow"), new Vector3(4.20f, -1.3f, 0f), Quaternion.identity);
+                    Instantiate(Resources.Load("TempBow"), SpawnBow.transform.position, Quaternion.identity);
                 }
                 break;
             case CraftableItem.PICKAXE:
@@ -71,7 +76,7 @@ public class Inventory : MonoBehaviour
                     wood -= 1;
                     stone -= 2;
                     hasPickaxe = true;
-                    Instantiate(Resources.Load("TempPickaxe"), new Vector3(4.20f, -1.3f, 1f), Quaternion.identity);
+                    Instantiate(Resources.Load("TempPickaxe"), SpawnPickaxe.transform.position, Quaternion.identity);
 
                 }
                 break;
