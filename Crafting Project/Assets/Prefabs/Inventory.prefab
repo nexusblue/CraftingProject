@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4130551304069844553}
-  - component: {fileID: 4130551304069844552}
+  - component: {fileID: 1700728895}
   m_Layer: 0
   m_Name: Inventory
   m_TagString: Inventory
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4130551304069844552
+--- !u!114 &1700728895
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,9 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed00ecb3645024ee580180209d640312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wood: 10
-  stone: 10
-  twine: 10
+  wood: 0
+  stone: 0
+  twine: 0
   woodText: {fileID: 0}
   stoneText: {fileID: 0}
   twineText: {fileID: 0}
