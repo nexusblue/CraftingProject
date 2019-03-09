@@ -44,6 +44,16 @@ public class Collectable : MonoBehaviour
                     GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().twine++;
                     break;
 
+                case Inventory.ResourceItem.DRAGONSCALE:
+                    GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().dragonscale++;
+                    break;
+                case Inventory.ResourceItem.MAGICSTONE:
+                    GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().magicstone++;
+                    break;
+                case Inventory.ResourceItem.GECKO:
+                    GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().gecko++;
+                    break;
+
             }
             Destroy(gameObject);
         }

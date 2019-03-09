@@ -7,13 +7,20 @@ public class Inventory : MonoBehaviour
 {
 
     public enum CraftableItem { SWORD, BOW, PICKAXE };
-    public enum ResourceItem { WOOD, STONE, TWINE };
+    public enum ResourceItem { WOOD, STONE, TWINE , DRAGONSCALE, MAGICSTONE, GECKO };
 
     public int wood;
     public int stone;
     public int twine;
+    public int dragonscale;
+    public int magicstone;
+    public int gecko;
 
     public Text woodText;
+    public Text magicrockText;
+    public Text geckoText;
+
+    public Text dragonscaleText;
     public Text stoneText;
     public Text twineText;
 
@@ -25,8 +32,7 @@ public class Inventory : MonoBehaviour
     public GameObject SpawnBow;
     public GameObject SpawnPickaxe;
 
-    private void Update()
-    {
+    private void Update(){
         woodText.text = wood.ToString();
         stoneText.text = stone.ToString();
         twineText.text = twine.ToString();
@@ -56,7 +62,6 @@ public class Inventory : MonoBehaviour
                     wood -= 1;
                     stone -= 2;
                     hasSword = true;
-                    //new Vector3(4.20f, -1.3f, -1f)
                     Instantiate(Resources.Load("TempSword"), SpawnSword.transform.position , Quaternion.identity);
 
                 }
