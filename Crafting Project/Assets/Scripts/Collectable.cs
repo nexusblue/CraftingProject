@@ -43,7 +43,6 @@ public class Collectable : MonoBehaviour
                 case Inventory.ResourceItem.TWINE:
                     GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().twine++;
                     break;
-
                 case Inventory.ResourceItem.DRAGONSCALE:
                     GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().dragonscale++;
                     break;
