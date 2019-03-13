@@ -6,48 +6,42 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
 
-    public enum CraftableItem { SWORD, BOW, PICKAXE };
+    public enum CraftableItem { SWORD, BOW, PICKAXE, REDPOTION,BLUEPOTION,YELLOWPOTION };
     public enum ResourceItem { WOOD, STONE, TWINE , DRAGONSCALE, MAGICSTONE, GECKO };
 
-    public int wood;
-    public int stone;
-    public int twine;
-    public int dragonscale;
-    public int magicstone;
-    public int gecko;
-
-    public Text woodText;
-    public Text magicrockText;
+    public Text dragonScaleText;
+    public Text magicStoneText;
     public Text geckoText;
 
-    public Text dragonscaleText;
-    public Text stoneText;
-    public Text twineText;
+    public int dragonScale;
+    public int magicStone;
+    public int gecko;
 
-    public bool hasSword;
-    public bool hasBow;
-    public bool hasPickaxe;
+    public GameObject SpawnPotionRed;
+    public GameObject SpawnPotionBlue;
+    public GameObject SpawnPotionYellow;
 
-    public GameObject SpawnSword;
-    public GameObject SpawnBow;
-    public GameObject SpawnPickaxe;
+   
+    public bool hasPotionRed;
+    public bool hasPotionBlue;
+    public bool hasPotionYellow;
 
     private void Update(){
-        woodText.text = wood.ToString();
-        stoneText.text = stone.ToString();
-        twineText.text = twine.ToString();
+        dragonScaleText.text = dragonScale.ToString();
+        magicStoneText.text = magicStone.ToString();
+        geckoText.text = gecko.ToString();
     }
 
     //taking button number from UI
     public void CraftbyInt(int craftInt){
         if(craftInt == 1) {
-            Craft(CraftableItem.SWORD);
+            Craft(CraftableItem.REDPOTION);
         }
         else if (craftInt == 2){
-            Craft(CraftableItem.BOW);
+            Craft(CraftableItem.BLUEPOTION);
         }
         else if (craftInt == 3){
-            Craft(CraftableItem.PICKAXE);
+            Craft(CraftableItem.YELLOWPOTION);
         }
 
     }
@@ -56,32 +50,33 @@ public class Inventory : MonoBehaviour
 
         bool success = false;
         switch (craft) {
-            case CraftableItem.SWORD:
-                if (wood>=1 && stone >=2) {
+            case CraftableItem.REDPOTION:
+                if (gecko>=3 && magicStone >= 2) {
                     success = true;
-                    wood -= 1;
-                    stone -= 2;
-                    hasSword = true;
-                    Instantiate(Resources.Load("TempSword"), SpawnSword.transform.position , Quaternion.identity);
+                    gecko -= 3;
+                    magicStone -= 2;
+                    hasPotionRed = true;
+                    Instantiate(Resources.Load("PotionRed"), SpawnPotionRed.transform.position , Quaternion.identity);
 
                 }
                 break;
-            case CraftableItem.BOW:
-                if (wood >= 2 && twine >= 2){
+            case CraftableItem.BLUEPOTION:
+                if (magicStone >= 4 && dragonScale >= 1){
                     success = true;
-                    wood -= 2;
-                    twine -= 2;
-                    hasBow = true;
-                    Instantiate(Resources.Load("TempBow"), SpawnBow.transform.position, Quaternion.identity);
+                    magicStone -= 4;
+                    dragonScale -= 1;
+                    hasPotionBlue = true;
+                    Instantiate(Resources.Load("PotionBlue"), SpawnPotionBlue.transform.position, Quaternion.identity);
                 }
                 break;
-            case CraftableItem.PICKAXE:
-                if (wood >= 1 && stone >= 2){
+            case CraftableItem.YELLOWPOTION:
+                if (dragonScale >= 2 && magicStone >= 2 && gecko >=2){
                     success = true;
-                    wood -= 1;
-                    stone -= 2;
-                    hasPickaxe = true;
-                    Instantiate(Resources.Load("TempPickaxe"), SpawnPickaxe.transform.position, Quaternion.identity);
+                    dragonScale -= 2;
+                    magicStone -= 2;
+                    gecko -= 2;
+                    hasPotionYellow = true;
+                    Instantiate(Resources.Load("PotionYellow"), SpawnPotionYellow.transform.position, Quaternion.identity);
 
                 }
                 break;

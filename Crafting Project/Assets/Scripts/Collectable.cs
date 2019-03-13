@@ -6,25 +6,12 @@ public class Collectable : MonoBehaviour
 {
     //go to resource script for the enum resource
     public Inventory.ResourceItem resourceType ;
+    //public AudioSource pickupSound;
 
-    //GameObject InvenTag = GameObject.FindGameObjectWithTag("Inventory");
-    /*
-    private void OnMouseDown()
+    public void Start()
     {
-        switch (resourceType) {
-            case Inventory.ResourceItem.WOOD:
-                InvenTag.GetComponent<Inventory>().wood++;
-                break;
-            case Inventory.ResourceItem.STONE:
-                InvenTag.GetComponent<Inventory>().stone++;
-                break;
-            case Inventory.ResourceItem.TWINE:
-                InvenTag.GetComponent<Inventory>().twine++;
-                break;
-        }
-        //Destroy(gameObject);
+
     }
-    */
 
     //check for player tag and if yes
     //destroy game collectable and add one to inventory 
@@ -35,19 +22,19 @@ public class Collectable : MonoBehaviour
             switch (resourceType)
             {
                 case Inventory.ResourceItem.WOOD:
-                    GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().wood++;
+                    //GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().wood++;
                     break;
                 case Inventory.ResourceItem.STONE:
-                    GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().stone++;
+                    //GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().stone++;
                     break;
                 case Inventory.ResourceItem.TWINE:
-                    GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().twine++;
+                    //GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().twine++;
                     break;
                 case Inventory.ResourceItem.DRAGONSCALE:
-                    GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().dragonscale++;
+                    GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().dragonScale++;
                     break;
                 case Inventory.ResourceItem.MAGICSTONE:
-                    GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().magicstone++;
+                    GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().magicStone++;
                     break;
                 case Inventory.ResourceItem.GECKO:
                     GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().gecko++;

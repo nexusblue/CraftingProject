@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerPickup : MonoBehaviour
-{
+public class Throwing : MonoBehaviour{
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,8 +13,10 @@ public class PlayerPickup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetMouseButtonDown(0)) { 
         
+        }
+
     }
-
-
 }

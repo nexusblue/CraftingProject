@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4130551304069844553}
   - component: {fileID: 1700728895}
+  - component: {fileID: 7863736026955249770}
   m_Layer: 0
   m_Name: Inventory
   m_TagString: Inventory
@@ -47,8 +48,47 @@ MonoBehaviour:
   stone: 0
   twine: 0
   woodText: {fileID: 0}
+  magicrockText: {fileID: 0}
+  geckoText: {fileID: 0}
+  dragonscaleText: {fileID: 0}
   stoneText: {fileID: 0}
   twineText: {fileID: 0}
   hasSword: 0
   hasBow: 0
   hasPickaxe: 0
+  dragonscale: 0
+  magicstone: 0
+  gecko: 0
+  SpawnSword: {fileID: 0}
+  SpawnBow: {fileID: 0}
+  SpawnPickaxe: {fileID: 0}
+--- !u!114 &7863736026955249770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4130551304069844567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed00ecb3645024ee580180209d640312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wood: 0
+  stone: 0
+  twine: 0
+  woodText: {fileID: 0}
+  magicrockText: {fileID: 0}
+  geckoText: {fileID: 0}
+  dragonscaleText: {fileID: 0}
+  stoneText: {fileID: 0}
+  twineText: {fileID: 0}
+  hasSword: 0
+  hasBow: 0
+  hasPickaxe: 0
+  dragonscale: 0
+  magicstone: 0
+  gecko: 0
+  SpawnSword: {fileID: 0}
+  SpawnBow: {fileID: 0}
+  SpawnPickaxe: {fileID: 0}
