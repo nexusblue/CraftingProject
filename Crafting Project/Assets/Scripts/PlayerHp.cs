@@ -10,6 +10,8 @@ public class PlayerHp : MonoBehaviour
     public float startHealth = 100.0f;
     private float health; 
     public Image HealthBar;
+    public float playerDmg = 7;
+    public float playerHeal = 15;
 
     // Start is called before the first frame update
     void Start(){
@@ -18,11 +20,11 @@ public class PlayerHp : MonoBehaviour
 
     private void OnTriggerStay(Collider other ){
         if (other.gameObject.tag == "FireArea") {
-            health -= 5 * Time.deltaTime;
+            health -= playerDmg * Time.deltaTime;
             HealthBar.fillAmount = health / startHealth;
         }
         if (other.gameObject.tag == "SafeArea" && health < 100 ){
-            health +=  15 * Time.deltaTime;
+            health += playerHeal * Time.deltaTime;
             HealthBar.fillAmount = health / startHealth;
         }
 
