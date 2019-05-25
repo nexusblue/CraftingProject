@@ -13,6 +13,7 @@ public class PlayerAnimaiton : MonoBehaviour{
 
     float magnitude;
 
+    public Vector3 jumps;
 
     Vector3 moveDirect = Vector3.zero;
 
@@ -25,6 +26,7 @@ public class PlayerAnimaiton : MonoBehaviour{
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
         playerRb = GetComponent<Rigidbody>();
+        jumps = new Vector3(0, jumpUpForce, 0);
     }
 
     // Update is called once per frame
@@ -38,7 +40,7 @@ public class PlayerAnimaiton : MonoBehaviour{
     private void jumping(){
         if (Input.GetKeyDown(KeyCode.Space) && controller.isGrounded){
             anim.SetTrigger("jumping");
-            playerRb.velocity = transform.up * jumpUpForce;
+            playerRb.AddForce(jumps * jumpUpForce,ForceMode.Impulse);
             //add force to jump player
         }
     }

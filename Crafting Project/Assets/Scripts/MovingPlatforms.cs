@@ -14,6 +14,7 @@ public class MovingPlatforms : MonoBehaviour {
     float movementFactor;
 
     public GameObject Player;
+    Vector3 startingPos;
 
     private void OnTriggerEnter (Collider other) {
         if(other.gameObject == Player){
@@ -28,7 +29,7 @@ public class MovingPlatforms : MonoBehaviour {
         }
     }
 
-    Vector3 startingPos;
+   
 
 	// Use this for initialization
 	void Start () {
